@@ -8,7 +8,7 @@ const NewArrivals = () => {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(true);
   const newArrivals = [
     {
       _id: '1',
@@ -171,6 +171,7 @@ const NewArrivals = () => {
           </button>
           <button
             onClick={() => scroll('right')}
+            disabled={!canScrollRight}
             className={`p-2 rounded border ${canScrollRight ? 'bg-white text-black' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
           >
             <FiChevronRight className="text-2xl " />
