@@ -57,7 +57,7 @@ const similarProducts = [
 ];
 
 const ProductDetails = () => {
-  const [mainImage, setMainImage] = useState('');
+  const [mainImage, setMainImage] = useState(selectedProduct.images[0].url);
   const [selectedSize, setSelectedSize] = useState('');
   const [selectedColor, setSelectColor] = useState('');
   const [quantity, setQuantity] = useState(1);
