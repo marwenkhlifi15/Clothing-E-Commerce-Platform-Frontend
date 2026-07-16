@@ -63,7 +63,7 @@ const Register = () => {
           </button>
           <p className="mt-6 text-center text-sm">
             Already have an account?{' '}
-            <Link to="/register" className="text-blue-500">
+            <Link to="/login" className="text-blue-500">
               Login
             </Link>
           </p>
